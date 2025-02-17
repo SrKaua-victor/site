@@ -1,0 +1,127 @@
+header{
+
+    background-color:rgba(0, 0, 0, 0.856);
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: 1px;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.15);
+    height: 80px;
+    line-height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+    
+}
+
+
+header .logo {
+
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o texto e a imagem */
+
+}   
+
+header .logo img {
+    height: 64px; /* Ajuste o valor conforme o tamanho desejado */
+    
+    margin-bottom: 25px; /* Sobe a imagem manualmente */
+    
+    margin-left: 5px; /* Espaçamento entre o texto e a imagem */
+
+}
+
+
+header nav{
+ 
+    display: inline-block;
+    
+}
+
+header nav ul li{
+
+    display: inline-block;
+
+}
+
+header nav ul li a{
+
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-right: 24px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+   
+}
+
+header nav ul li:last-of-type a{
+
+    margin-right: 10px;
+
+}
+
+header nav ul li a:hover{
+
+    color: rgb(114, 114, 114);
+    
+    }
+
+h1 {
+        margin-top: 100px;
+        color:rgb(0, 0, 0);
+        font-size: 52px;
+        letter-spacing: 1.3px;
+        line-height: 58px;
+        text-align: center;
+ }
+
+ h2{
+    margin-top: 50px;
+    color: black;
+    text-align: center;
+ }
+
+ body{
+    
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+} 
+
+#title-section{
+    
+    padding-top: 80px; /* Ajuste esse valor conforme necessário */
+    margin-bottom: 50px;
+    
+}
+
+img{
+
+    max-width: 100%;
+
+}
+#tempo {
+    color: rgb(238, 47, 47);
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 100px;
+    width: fit-content; /* Faz com que a largura se ajuste ao conteúdo */
+    margin: auto; /* Centraliza o elemento */
+    padding: 0px 10px;
+}
+.tempoespera{
+
+    color: rgb(29, 29, 29);
+}

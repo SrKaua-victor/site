@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where is My Bus?</title>
+    <link rel="stylesheet" href="css/stilo.css">
+    
+    <!-- Importa o Leaflet (Biblioteca para Mapas) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+
+    <header>
+        <section class="logo">
+           <span>Where is My Bus</span><img src="imagens/buzao.png" alt="">
+        </section>
+        <nav>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=Na0w3Mz46GA">About us</a></li>
+                <li><a href="indexRag.html">Rotas</a></li>
+                <li><a href="login.html">Login</a></li> 
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="title-section">
+        <h1>Rota 01</h1>
+    </section>
+
+    <section id="tempo">
+        <p><span class="tempoespera">Tempo de espera:</span> 5 minutos </p>
+    </section>
+
+    <section id="map-section">
+        <h2>Localização Atual</h2>
+        <div id="map" style="height: 500px; width: 100%;"></div>
+    </section>
+
+    <!-- Importa o Leaflet.js -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="Javascript/javascript.js"></script>
+
+</body>
+</html>
