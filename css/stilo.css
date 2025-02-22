@@ -1,6 +1,6 @@
 header{
 
-    background-color:rgba(0, 0, 0, 0.856);
+    background-color:rgba(8, 8, 8, 0.856);
     color: rgb(255, 255, 255);
     padding-top: 30px;
     padding-bottom: 20px;
@@ -16,8 +16,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    z-index: 2;
-    
+    z-index: 1000;
 }
 
 
@@ -124,4 +123,18 @@ img{
 .tempoespera{
 
     color: rgb(29, 29, 29);
+}
+
+#map-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+    text-align: center; /* Centraliza o título */
+}
+
+.map {
+    width: 80%;  /* Define a largura do mapa */
+    height: 500px; /* Define a altura do mapa */
+    max-width: 800px; /* Limita o tamanho máximo */
+    border-radius: 30px; /* Borda arredondada opcional */
 }
