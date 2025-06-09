@@ -32,3 +32,34 @@ if (navigator.geolocation) {
 } else {
     console.log("Geolocalização não suportada pelo navegador.");
 }
+function trocarRota(numero) {
+    const titulo = document.querySelector("#title-section h1");
+    const tempo = document.querySelector("#tempo p");
+
+    // Altera título
+    titulo.textContent = `Rota 0${numero}`;
+
+    // Define tempo de espera fictício
+    const tempos = {
+        1: "5 minutos",
+        2: "7 minutos",
+        3: "3 minutos",
+        4: "10 minutos"
+    };
+
+    // Atualiza texto
+    tempo.innerHTML = `<span class="tempoespera">Tempo de espera:</span> ${tempos[numero]}`;
+
+    // Define coordenadas fictícias das rotas
+    const coordenadas = {
+        1: [-23.55052, -46.633308], // São Paulo
+        2: [-23.551, -46.630],      // Próximo
+        3: [-23.553, -46.635],
+        4: [-23.554, -46.637]
+    };
+
+    // Atualiza visualização do mapa e marcador
+    let novaCoordenada = coordenadas[numero];
+    marker.setLatLng(novaCoordenada);
+    map.setView(novaCoordenada, 15);
+}

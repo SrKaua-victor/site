@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus Finder</title>
+    <title>Sobre o Projeto - Bus Find</title>
     <link rel="stylesheet" href="css/stilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     
     <!-- Importa o Leaflet (Biblioteca para Mapas) -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -14,15 +15,26 @@
 
     <header>
         <section class="logo">
-            <img src="imagens/image_no_bg.png" alt=""><span>Bus Finder</span>
+            <img src="imagens/image_no_bg.png" alt=""><span>Bus Find</span>
         </section>
         <nav>
-            <ul>
-                <li><a href="https://www.youtube.com/watch?v=Na0w3Mz46GA">About us</a></li>
-                <li><a href="indexRag.html">Rotas</a></li>
-                <li><a href="login.html">Login</a></li> 
-            </ul>
-        </nav>
+    <ul>
+        <li><a href="aboutus.html">About us</a></li>
+
+    <li>
+        <a href="#">Rotas</a>
+        <ul class="submenu">
+            <li><a href="#" onclick="trocarRota(1)">Rota 1</a></li>
+            <li><a href="#" onclick="trocarRota(2)">Rota 2</a></li>
+            <li><a href="#" onclick="trocarRota(3)">Rota 3</a></li>
+            <li><a href="#" onclick="trocarRota(4)">Rota 4</a></li>
+        </ul>
+    </li>
+
+        
+    </ul>
+</nav>
+
     </header>
     
     <section id="title-section">

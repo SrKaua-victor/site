@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Faz html e body ocuparem toda a altura da janela */
+html, body {
+    height: 100%;
+}
+
+/* Corpo como flex container, em coluna */
+body {
+    font-family: "Comfortaa", sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* altura mínima da tela */
+}
+
+/* Header fixo no topo, já tem position sticky e z-index */
+header {
+    background-color: rgba(8, 8, 8, 0.856);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Faz o main crescer para ocupar o espaço entre header e footer */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+
+    flex: 1 0 auto; /* faz o main crescer e ocupar espaço */
+}
+
+/* Footer fixado ao final da página */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* força o footer para o fim da página */
+}
+
+/* Outros estilos continuam iguais */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+.about-project, .team {
+    margin-bottom: 50px;
+}
+
+.about-project h1,
+.team h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.about-project p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.team-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.member h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.member p {
+    font-size: 16px;
+    color: #555;
+}
