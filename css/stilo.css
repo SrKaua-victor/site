@@ -62,23 +62,28 @@ header nav ul li a:hover {
 
 /* Submenu */
 nav ul li ul.submenu {
-    text-align: center;
-    display: none;
+    display: block;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50%;
+    transform: translateX(-55%);
     background-color: rgba(27, 27, 27, 0.95);
-    padding: 10px;
     border-radius: 25px;
     min-width: 100px;
-    z-index: 1001;
-    
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+    padding: 0 10px;
 }
 
+
 nav ul li:hover ul.submenu {
-    display: block;
-    background-color: rgb(39, 38, 38);
+    max-height: 500px; /* suficiente para o conteúdo */
+    opacity: 1;
+    padding: 10px;
 }
+
 
 nav ul li ul.submenu li {
     display: block;
@@ -86,17 +91,34 @@ nav ul li ul.submenu li {
 }
 
 nav ul li ul.submenu li a {
-    
-    font-size: 16px;
-    color: white;
-    margin-right: 0;
+    white-space: nowrap;
     display: block;
-    padding: 5px 10px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
 }
+
 
 nav ul li ul.submenu li a:hover {
     background-color: rgba(49, 49, 49, 0.884);
     border-radius: 30px;
+    color: #dfcf8f;
+}
+
+nav ul li ul.submenu li {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-10px);
+    opacity: 0;
+}
+
+nav ul li:hover ul.submenu li {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /* Título principal */

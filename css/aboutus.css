@@ -105,13 +105,22 @@ nav ul li a:hover {
 }
 
 .member {
+    background: linear-gradient(to bottom right, #ffffff, #dddcdc);
     background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    width: 250px;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 260px;
     text-align: center;
+    border: 2px solid #dedede; /* Borda sutil */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /* Eleva o card ao passar o mouse */
+}
+
 
 .member img {
     width: 100px;
@@ -124,10 +133,10 @@ nav ul li a:hover {
 .member h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #333;
+    color: #252525;
 }
 
 .member p {
     font-size: 16px;
-    color: #555;
+    color: #494949;
 }
